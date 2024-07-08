@@ -128,6 +128,8 @@ while run:
                     pygame.draw.rect(window, BLACK, (x * CELL_SIZE, y * CELL_SIZE, CELL_SIZE, CELL_SIZE))
                 else:
                     pygame.draw.rect(window, WHITE, (x * CELL_SIZE, y * CELL_SIZE, CELL_SIZE, CELL_SIZE), 1)
+        pygame.display.flip()
+        clock.tick(10)
     elif screen == 'menu':
         window.fill((160, 160, 160))
         font_text = pygame.font.Font("arial-unicode-ms.ttf", 22)
@@ -136,6 +138,6 @@ while run:
         for button in menu_buttons:
             button.update(mouse_pos)
             button.draw(window)
-
-    pygame.display.flip()
-    clock.tick(10)  # Кількість кадрів на секунду
+        pygame.display.flip()
+        clock.tick(90)
+  #lesbian massage sex with gymnastic girl
